@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/iconsfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sergei Frolov</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+
+            <div class="burger">
+                <span class="burger__line"></span>
+            </div>
+
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#welcome">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="welcome" id="welcome">
+            <div class="container welcome__container">
+                <p class="welcome__text">Hi, my name is
+                    <span class="typed"></span><br>
+                    I'm a web developer
+                </p>
+                <a class="btn" href="#intro">Ok, what else?</a>
+            </div>
+        </section>
+        <section class="intro" id="intro">
+            <div class="container intro__container">
+                <div class="intro__content">
+                    <div class="intro__photo">
+                        <img src="img/photo.jpg" alt="photo">
+                    </div>
+                    <div class="intro__card">
+                        <div class="intro__header"></div>
+                        <p class="text intro__text">What really drives me is creating an HTML markup. Adaptive, clean,
+                            reliable. Using best of CSS3 tecniques</p>
+                        <p class="text intro__text">And then add some Javascript to make a webpage alive</p>
+                        <p class="text intro__text">If you want to convert your design to a web page, feel free to
+                            contact me</p>
+                        <a class="btn intro__btn" href="#portfolio">My recent projects</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="portfolio gray-bg" id="portfolio">
+            <div class="container">
+                <div class="section-header">Portfolio</div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <div class="project__image">
+                                    <a href="https://ffujiya.github.io/portfolio-3/" target="_blank">
+                                        <img src="img/portfolio/velo.jpg" alt="project">
+                                    </a>
+                                </div>
+                                <div class="project__info">
+                                    <div class="project__desc">Fully responsive web page, adaptive for mobile devices,
+                                        burger menu, slider</div>
+                                    <a href="https://ffujiya.github.io/portfolio-3/" target="_blank"
+                                        class="project__link">take a look</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <div class="project__image">
+                                    <a href="https://ffujiya.github.io/portfolio-2/" target="_blank">
+                                        <img src="img/portfolio/scandi.jpg" alt="project">
+                                    </a>
+                                </div>
+                                <div class="project__info">
+                                    <div class="project__desc">Adaptive landing page for interior design
+                                        agency<br>Responsive gallery, slider<br>flex, js, media queries</div>
+                                    <a href="https://ffujiya.github.io/portfolio-2/" target="_blank"
+                                        class="project__link">take a look</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <div class="project__image">
+                                    <a href="https://mineralts.by/" target="_blank">
+                                        <img src="img/portfolio/mts.jpg" alt="project">
+                                    </a>
+                                </div>
+                                <div class="project__info">
+                                    <div class="project__desc">Design and implementation of a landing page for a
+                                        building company</div>
+                                    <a href="https://mineralts.by/" target="_blank" class="project__link">take a
+                                        look</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="section-header theme-color">Contacts</div>
+                <ul class="social">
+                    <li>
+                        <a class="social__link icon-email" href="mailto:frolov604@gmail.com" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="social__link icon-linkedin" href="https://www.linkedin.com/in/sergei-frolov-604/"
+                            target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="social__link icon-github" href="https://github.com/ffujiya" target="_blank"></a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
