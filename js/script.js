@@ -2,6 +2,8 @@ const header = document.querySelector(".header");
 const burger = document.querySelector(".burger");
 const menuLinks = document.querySelectorAll(".menu__link");
 const sections = document.querySelectorAll("section");
+const firstScreenButton = document.getElementById('firstScreenButton');
+const welcome = document.getElementById('welcome');
 
 burger.addEventListener("click", function () {
     header.classList.toggle('active-nav');
@@ -22,6 +24,10 @@ for (let menuLink of menuLinks) {
         closeMenu();
     });
 }
+
+firstScreenButton.addEventListener('click', () => {
+    window.scrollTo(0, welcome.scrollHeight -100);
+})
 
 // active menu item
 window.addEventListener("scroll", () => {
