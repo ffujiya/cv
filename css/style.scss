@@ -206,15 +206,15 @@ body {
 }
 
 .intro {
-    padding-bottom: 100px;
     &__container {
-        padding: 100px 20px;
+        padding: 100px 20px 80px 20px;
         @media screen and (max-width: 900px) {
             padding: 50px 20px;
         }
     }
     &__content {
         display: flex;
+        margin-bottom: 100px;
         @media screen and (max-width: 700px) {
             flex-direction: column;
             align-items: center;
@@ -246,6 +246,38 @@ body {
     &__btn {
         margin-top: 50px;
     }
+}
+
+.technologies{
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 800px) {
+        display: block;
+    }
+    &__card{
+        flex: 0 1 30%;
+        border: 2px solid rgb(233, 230, 230);
+        padding: 20px;
+
+    }
+}
+
+.t-card{
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 20px;
+    &__header{
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: right;
+        font-size: 20px;
+    }
+    &__list{
+        font-weight: 300;
+    }
+    &__list li{
+        margin-bottom: 7px;
+    }
+   
 }
 
 .portfolio {

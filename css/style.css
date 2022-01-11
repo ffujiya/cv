@@ -325,12 +325,8 @@ body.lock {
   padding: 100px 20px;
 }
 
-.intro {
-  padding-bottom: 100px;
-}
-
 .intro__container {
-  padding: 100px 20px;
+  padding: 100px 20px 80px 20px;
 }
 
 @media screen and (max-width: 900px) {
@@ -343,6 +339,7 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 700px) {
@@ -397,6 +394,49 @@ body.lock {
 
 .intro__btn {
   margin-top: 50px;
+}
+
+.technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .technologies {
+    display: block;
+  }
+}
+
+.technologies__card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  border: 2px solid #e9e6e6;
+  padding: 20px;
+}
+
+.t-card {
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 20px;
+}
+
+.t-card__header {
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 20px;
+}
+
+.t-card__list {
+  font-weight: 300;
+}
+
+.t-card__list li {
+  margin-bottom: 7px;
 }
 
 .portfolio {
